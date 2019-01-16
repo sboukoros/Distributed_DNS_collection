@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DNS firewall interface</title>
+
+  </head>
+  <body>
+  
+    <h1>Welcome.</h1>
+
+    There are <emph>two ways to query</emph> this interface.</br>
+    The first way is with GET requests and curl. An example: 'curl -X GET http://url_of_this_vm/hosts/&lt;hostname&gt;/&lt;ip&gt;' will return OK for good IPs and NotOK for bad IPs.</br>
+    The second way is to just test it here in the browser, as basic GET queries can also be triggered here.</br></br></br>
+
+    There are two types of queries that can be used: </br> 
+    The first query type is to lookup a host, ip combination. </br>An example: <a href="hosts/amazon.com/72.21.215.232">/hosts/&lt;hostname&gt;/&lt;ip&gt;<></a></br></br>
+    The second is a date range query for a given host </br>An example: <a href="hosts/amazon.com/dates/2014-01-01/2014-01-14">/hosts/&lt;hostname&gt;/dates/&lt;from_date&gt/&lt;to_date&gt;;</a></br></br>
+  </body>
+</html>
